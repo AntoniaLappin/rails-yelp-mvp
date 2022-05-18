@@ -1,0 +1,7 @@
+<h1>Restaurants</h1>
+<ul>
+  <% @Restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurants_path(task) %></li>
+  <% end  %>
+</ul>
+<%= link_to 'new', new_restaurant_path %>
